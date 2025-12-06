@@ -1,0 +1,51 @@
+/* styles.css - basic styles with explanations below */
+
+:root {
+  --bg: #f7f7f9;        /* page background color variable */
+  --accent: #2b6cb0;    /* accent color variable (blue) */
+  --text: #222;         /* main text color */
+}
+
+* {
+  box-sizing: border-box; /* makes padding counted inside element width */
+}
+
+body {
+  margin: 0;                  /* remove default browser margins */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);      /* use the background variable */
+  color: var(--text);
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin: 0 0 0.25rem 0;
+  color: var(--accent);
+}
+
+.tagline {
+  margin: 0;
+  opacity: 0.85;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
